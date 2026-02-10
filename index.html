@@ -1,0 +1,861 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANmobiles - Your Premier Destination for Next-Gen Mobile Technology in Multan, Pakistan</title>
+    <meta name="description" content="Discover the future of mobile technology at ANmobiles in Multan, Pakistan. Featuring high-quality smartphones, cutting-edge accessories, unparalleled customer service, reliable nationwide shipping, and transparent payment options including advance and mobile payments via JazzCash (+923221072469). Your trusted source for Samsung, Apple, Xiaomi, Google, and more.">
+    <meta name="keywords" content="ANmobiles, mobile shop Multan, Pakistan, smartphones, Apple, Samsung, Xiaomi, Google Pixel, OnePlus, mobile accessories, latest phones, customer service, mobile delivery, Muhammad Anas, advance payment, mobile payment, JazzCash +923221072469, shipping charges PKR">
+    <meta name="author" content="Muhammad Anas (ANmobiles)">
+
+    <!-- Google Fonts for a sleek, modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for sleek icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* CSS Variables for a dark, futuristic theme */
+        :root {
+            --bg-dark: #0a0a0a;
+            --card-bg: rgba(10, 10, 10, 0.75); /* Slightly more opaque for better readability with smaller fonts */
+            --border-light: rgba(255, 255, 255, 0.25);
+            --text-main: #e8e8e8;
+            --text-secondary: #c0c0c0;
+            --accent-glow-blue: #00bcd4; /* Cyan/Teal glow */
+            --accent-glow-purple: #9c27b0; /* Purple glow */
+            --glow-light: rgba(0, 188, 212, 0.85);
+            --glow-dark: rgba(156, 39, 176, 0.85);
+            /* Advanced background gradients for dynamic animation */
+            --bg-gradient-keyframe-1: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            --bg-gradient-keyframe-2: linear-gradient(135deg, #24243e 0%, #302b63 50%, #0f0c29 100%);
+            --bg-gradient-keyframe-3: linear-gradient(135deg, #302b63 0%, #0f0c29 50%, #24243e 100%);
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--bg-gradient-keyframe-1); /* Initial ambient background */
+            background-size: 400% 400%; /* For animation */
+            animation: gradientShift 25s ease infinite alternate; /* Slower, smoother background animation */
+            color: var(--text-main);
+            line-height: 1.5; /* Adjusted line height for smaller fonts */
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+            position: relative;
+        }
+
+        /* Subtle particle effect in the background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at top left, rgba(0,188,212,0.18) 0%, transparent 20%),
+                        radial-gradient(circle at bottom right, rgba(156,39,176,0.18) 0%, transparent 20%);
+            background-size: 100% 100%;
+            animation: particleGlow 35s ease infinite alternate;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; background-image: var(--bg-gradient-keyframe-1); }
+            33% { background-position: 100% 50%; background-image: var(--bg-gradient-keyframe-2); }
+            66% { background-position: 50% 100%; background-image: var(--bg-gradient-keyframe-3); }
+            100% { background-position: 0% 50%; background-image: var(--bg-gradient-keyframe-1); }
+        }
+
+        @keyframes particleGlow {
+            0% { background-position: 0% 0%; opacity: 0.95; }
+            33% { background-position: 50% 50%; opacity: 0.8; }
+            66% { background-position: 100% 0%; opacity: 0.98; }
+            100% { background-position: 0% 0%; opacity: 0.95; }
+        }
+
+        /* Glassmorphism base for major containers */
+        .glass-panel {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-light);
+            backdrop-filter: blur(25px); /* Enhanced blur for prominent glass effect */
+            -webkit-backdrop-filter: blur(25px);
+            border-radius: 30px; /* Larger rounded corners */
+            box-shadow: 0 18px 65px 0 rgba(0, 0, 0, 0.65);
+            transition: all 0.4s ease;
+            position: relative;
+            z-index: 1;
+        }
+        .glass-panel:hover {
+            box-shadow: 0 22px 75px 0 rgba(0, 0, 0, 0.75);
+        }
+
+        header {
+            padding: 6em 0; /* Slightly reduced header padding */
+            text-align: center;
+            position: relative;
+            z-index: 10;
+            border-bottom: 3px solid var(--accent-glow-blue);
+            background: rgba(0,0,0,0.9); /* Darker, more prominent header for contrast */
+            box-shadow: 0 5px 35px rgba(0,0,0,0.75);
+        }
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 5em; /* Reduced font size */
+            letter-spacing: 7px;
+            font-weight: 700;
+            color: white;
+            text-shadow: 0 0 25px var(--accent-glow-blue), 0 0 45px var(--accent-glow-purple); /* Intense Neon glow */
+            margin: 0;
+            transition: text-shadow 0.7s ease;
+        }
+        h1:hover {
+            text-shadow: 0 0 30px var(--accent-glow-blue), 0 0 55px var(--accent-glow-purple), 0 0 70px var(--accent-glow-blue);
+        }
+        header p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.6em; /* Reduced font size */
+            margin-top: 30px;
+            font-weight: 300;
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(0,0,0,0.98); /* Nearly fully opaque nav for max clarity */
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 1.5em 0; /* Reduced padding */
+            border-bottom: 2px solid var(--border-light);
+            box-shadow: 0 2px 30px rgba(0,0,0,0.85);
+        }
+        nav .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav .nav-links li {
+            margin: 0 1.5em;
+        }
+        nav a {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--text-main);
+            text-decoration: none;
+            padding: 1.2em 2.5em; /* Reduced padding */
+            border-radius: 10px;
+            transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            font-weight: 600;
+            font-size: 1.1em; /* Reduced font size */
+            text-transform: uppercase;
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            letter-spacing: 1.2px;
+        }
+        nav a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent);
+            transition: left 0.7s ease;
+        }
+        nav a:hover::before {
+            left: 100%;
+        }
+        nav a:hover {
+            color: white;
+            background-color: var(--accent-glow-blue);
+            box-shadow: 0 0 25px var(--accent-glow-blue);
+            transform: translateY(-5px);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1600px; /* Adjusted max-width */
+            margin: 80px auto; /* Reduced margin */
+            padding: 70px; /* Reduced padding */
+            border-radius: 30px;
+        }
+
+        section {
+            margin-bottom: 120px; /* Reduced spacing between sections */
+            padding-bottom: 60px;
+            border-bottom: 2px dashed var(--border-light);
+        }
+        section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 4em; /* Reduced font size */
+            color: var(--accent-glow-blue);
+            text-shadow: 0 0 12px rgba(0, 188, 212, 0.6); /* Matching glow */
+            border-bottom: 5px solid var(--accent-glow-purple); /* Stronger accent border */
+            padding-bottom: 25px;
+            margin-bottom: 70px; /* Reduced margin */
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3.5px;
+        }
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--accent-glow-purple);
+            margin-top: 60px; /* Reduced margin */
+            margin-bottom: 35px; /* Reduced margin */
+            font-size: 2.5em; /* Reduced font size */
+            font-weight: 700;
+            border-left: 7px solid var(--accent-glow-blue);
+            padding-left: 25px;
+            text-shadow: 0 0 7px rgba(156, 39, 176, 0.5);
+        }
+
+        p, li, a {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2em; /* Reduced font size */
+            color: var(--text-secondary);
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-left: 0;
+        }
+        ul li {
+            position: relative;
+            padding-left: 45px; /* Reduced space for custom icon */
+            margin-bottom: 18px; /* Reduced margin */
+            font-size: 1.15em; /* Reduced font size */
+        }
+        ul li::before {
+            content: '\f058'; /* Font Awesome check-circle icon */
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: var(--accent-glow-blue);
+            font-size: 1.6em; /* Reduced icon size */
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        a {
+            color: var(--accent-glow-blue);
+            text-decoration: none;
+            transition: color 0.4s ease;
+        }
+        a:hover {
+            color: var(--accent-glow-purple);
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px; /* Reduced padding */
+            background: rgba(0,0,0,0.9);
+            color: var(--text-secondary);
+            margin-top: 120px; /* Reduced margin */
+            border-top: 3px solid var(--accent-glow-purple);
+            font-size: 1.2em; /* Reduced font size */
+            box-shadow: 0 -15px 55px rgba(0, 0, 0, 0.6);
+        }
+        footer a {
+            color: var(--accent-glow-blue);
+        }
+        footer a:hover {
+            color: var(--accent-glow-purple);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Adjusted slightly for smaller images */
+            gap: 60px;
+            margin-top: 60px;
+        }
+        .product-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px; /* Reduced padding */
+            overflow: hidden;
+            border-radius: 30px;
+        }
+        .product-card::before { /* Unique double border glow */
+            content: '';
+            position: absolute;
+            inset: -4px; /* Slight overlap for outer glow */
+            border-radius: 34px; /* Match outer border radius */
+            background: linear-gradient(45deg, var(--accent-glow-blue), var(--accent-glow-purple));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+            opacity: 0.7;
+            transition: opacity 0.5s ease, box-shadow 0.5s ease;
+            z-index: -1; /* Behind the card content */
+        }
+        .product-card:hover::before {
+            opacity: 1;
+            box-shadow: 0 0 35px rgba(0, 188, 212, 0.9), 0 0 60px rgba(156, 39, 176, 0.9);
+        }
+        .product-card:hover {
+            transform: translateY(-16px) scale(1.05);
+            box-shadow: 0 20px 65px rgba(0,0,0,0.75);
+        }
+
+        .product-brand-logo {
+            width: 60px; /* Adjusted smaller */
+            height: 45px; /* Adjusted smaller */
+            object-fit: contain;
+            margin-bottom: 20px; /* Reduced margin */
+            filter: brightness(200%); /* Make logos stand out on dark */
+            transition: transform 0.4s ease;
+        }
+        .product-card:hover .product-brand-logo {
+            transform: scale(1.15);
+        }
+
+        .product-card img {
+            width: 140px; /* Further reduced image size */
+            height: 140px; /* Further reduced image size */
+            object-fit: contain;
+            border-radius: 15px;
+            padding: 18px; /* Reduced padding */
+            background: rgba(255,255,255,0.1);
+            border: 2px solid rgba(255,255,255,0.35);
+            margin-bottom: 30px; /* Reduced margin */
+            transition: transform 0.5s ease;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.55);
+        }
+        .product-card:hover img {
+            transform: scale(1.1) rotate(5deg);
+        }
+        .product-card h4 {
+            font-family: 'Orbitron', sans-serif;
+            color: white;
+            font-size: 2.2em; /* Reduced font size */
+            margin-bottom: 18px;
+            text-align: center;
+            letter-spacing: 1.8px;
+            text-shadow: 0 0 10px var(--accent-glow-blue);
+        }
+        .product-card .price {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            color: var(--accent-glow-purple);
+            font-size: 2em; /* Reduced font size */
+            margin-bottom: 30px;
+            text-shadow: 0 0 9px var(--accent-glow-purple);
+        }
+        .product-card p {
+            font-size: 1.1em; /* Reduced font size */
+            text-align: center;
+            color: var(--text-secondary);
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+        .product-card ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            width: 100%;
+            margin-top: 20px; /* Reduced margin */
+            max-height: 200px; /* Slightly reduced max height */
+            overflow-y: auto;
+            padding-right: 18px;
+            border-top: 2px solid var(--border-light);
+            padding-top: 25px;
+        }
+        .product-card ul li {
+            font-size: 1em; /* Reduced font size */
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+            padding-left: 30px; /* Reduced padding */
+        }
+        .product-card ul li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: var(--accent-glow-blue);
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.3em; /* Reduced icon size */
+        }
+        .product-card .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--accent-glow-blue), var(--accent-glow-purple));
+            color: white;
+            padding: 15px 30px; /* Reduced padding */
+            border-radius: 35px;
+            text-decoration: none;
+            font-weight: 700;
+            margin-top: 40px; /* Reduced margin */
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 25px rgba(0, 188, 212, 0.6);
+            font-size: 1.2em; /* Reduced font size */
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+        .product-card .cta-button:hover {
+            transform: translateY(-6px) scale(1.08); /* Adjusted transform */
+            box-shadow: 0 12px 35px rgba(0, 188, 212, 0.9), 0 0 45px rgba(156, 39, 176, 0.9);
+            background: linear-gradient(45deg, var(--accent-glow-purple), var(--accent-glow-blue));
+        }
+
+        .brand-logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 50px; /* Reduced gap */
+            margin-top: 60px;
+        }
+        .brand-logo-card {
+            padding: 30px; /* Reduced padding */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+        .brand-logo-card::before { /* Outer glow for logos */
+            content: '';
+            position: absolute;
+            inset: -3px;
+            border-radius: 23px;
+            background: linear-gradient(45deg, var(--accent-glow-blue), var(--accent-glow-purple));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+            opacity: 0.5;
+            transition: opacity 0.5s ease, box-shadow 0.5s ease;
+            z-index: -1;
+        }
+        .brand-logo-card:hover::before {
+            opacity: 0.9;
+            box-shadow: 0 0 25px var(--accent-glow-blue), 0 0 40px var(--accent-glow-purple);
+        }
+        .brand-logo-card:hover {
+            transform: translateY(-10px) scale(1.08); /* Adjusted transform */
+            box-shadow: 0 15px 45px rgba(0,0,0,0.65);
+        }
+        .brand-logo-card img {
+            width: 90px; /* Reduced image size */
+            height: 65px; /* Reduced image size */
+            object-fit: contain;
+            filter: grayscale(100%) brightness(200%);
+            transition: all 0.6s ease;
+            margin-bottom: 20px;
+        }
+        .brand-logo-card:hover img {
+            filter: grayscale(0%) brightness(100%);
+            transform: scale(1.15);
+        }
+        .brand-logo-card p {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 600;
+            color: var(--text-main);
+            font-size: 1em; /* Reduced font size */
+            text-transform: uppercase;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 1600px) {
+            h1 { font-size: 4.5em; letter-spacing: 6px;}
+            h2 { font-size: 3.8em; }
+            .container { padding: 60px; }
+            .product-grid { grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); }
+        }
+        @media (max-width: 1400px) {
+            h1 { font-size: 4em; letter-spacing: 5px;}
+            h2 { font-size: 3.2em; }
+            h3 { font-size: 2.2em; }
+            p, li { font-size: 1.1em; }
+            nav a { padding: 1em 2em; margin: 0 1em; font-size: 1em; }
+            .container { padding: 50px; margin: 70px auto; }
+            .product-grid { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 50px;} /* adjusted for smaller images */
+            .product-card img { width: 160px; height: 160px; }
+            .product-card h4 { font-size: 2em; }
+            .product-card .price { font-size: 1.6em; }
+            .brand-logo-grid { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 50px; }
+        }
+        @media (max-width: 1200px) {
+            h1 { font-size: 3.5em; letter-spacing: 4px;}
+            header p { font-size: 1.4em; }
+            h2 { font-size: 2.8em; }
+            h3 { font-size: 2em; }
+            p, li { font-size: 1em; }
+            nav a { padding: 0.8em 1.5em; margin: 0 0.8em; font-size: 0.9em; }
+            .container { padding: 40px; margin: 60px auto; }
+            .product-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px;}
+            .product-card img { width: 140px; height: 140px; }
+            .product-card h4 { font-size: 1.8em; }
+            .product-card .price { font-size: 1.5em; }
+            .brand-logo-grid { grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 40px; }
+            ul li { padding-left: 40px; font-size: 0.95em; }
+        }
+        @media (max-width: 992px) {
+            h1 { font-size: 2.8em; letter-spacing: 3px;}
+            header p { font-size: 1.2em; }
+            h2 { font-size: 2.5em; }
+            h3 { font-size: 1.8em; padding-left: 18px; }
+            p, li { font-size: 0.95em; }
+            nav .nav-links { flex-direction: column; }
+            nav .nav-links li { margin: 0.6em 0; }
+            nav a { max-width: 300px; margin: 0.6em auto; padding: 0.8em 1.5em; font-size: 0.9em;}
+            .container { padding: 30px; margin: 50px auto; }
+            .product-grid { grid-template-columns: 1fr; /* Single column on smaller screens */ }
+            .product-card { padding: 35px; }
+            .product-card img { width: 150px; height: 150px; margin-bottom: 25px; }
+            .product-card h4 { font-size: 1.8em; }
+            .product-card .price { font-size: 1.5em; }
+            ul li { padding-left: 35px; font-size: 0.9em; }
+            .brand-logo-grid { grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); gap: 25px; }
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5em; letter-spacing: 2px; }
+            header p { font-size: 1em; }
+            h2 { font-size: 2.2em; padding-bottom: 18px; margin-bottom: 40px; letter-spacing: 1.5px; }
+            h3 { font-size: 1.6em; padding-left: 15px; border-left-width: 5px; }
+            p, li { font-size: 0.85em; }
+            .container { padding: 25px; margin: 40px auto; }
+            .product-card { padding: 25px; }
+            .product-card img { width: 120px; height: 120px; margin-bottom: 20px; }
+            .product-card h4 { font-size: 1.6em; }
+            .product-card .price { font-size: 1.3em; }
+            ul li { padding-left: 30px; font-size: 0.8em; }
+            .brand-logo-grid { grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)); gap: 18px; }
+            footer { padding: 35px; font-size: 1em; }
+        }
+        @media (max-width: 480px) {
+            h1 { font-size: 2em; letter-spacing: 1.5px; }
+            header p { font-size: 0.8em; }
+            h2 { font-size: 1.8em; padding-bottom: 15px; margin-bottom: 30px; letter-spacing: 1.2px; }
+            h3 { font-size: 1.4em; padding-left: 10px; border-left-width: 4px; }
+            p, li { font-size: 0.75em; }
+            .container { padding: 18px; margin: 30px auto; }
+            nav a { padding: 0.6em 1em; margin: 0.4em auto; font-size: 0.75em; }
+            .product-card { padding: 20px; }
+            .product-card img { width: 100px; height: 100px; margin-bottom: 15px; }
+            .product-card h4 { font-size: 1.4em; }
+            .product-card .price { font-size: 1.1em; }
+            .product-card p { font-size: 0.75em; }
+            .product-card ul li { font-size: 0.7em; padding-left: 25px; }
+            footer { padding: 30px; font-size: 0.9em; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ANmobiles</h1>
+        <p>Your Ultimate Nexus for Next-Generation Mobile Technology. Precision Engineering, Unrivaled Performance, and Exceptional Service Await in Multan, Pakistan.</p>
+    </header>
+
+    <nav class="glass-panel">
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#brands">Brands</a></li>
+            <li><a href="#customerservice">Support Hub</a></li>
+            <li><a href="#payment">Payments</a></li>
+            <li><a href="#shipping">Global Logistics</a></li>
+            <li><a href="#about">About ANmobiles</a></li>
+            <li><a href="#contact">Contact Nexus</a></li>
+        </ul>
+    </nav>
+
+    <div class="container glass-panel">
+        <section id="home">
+            <h2>Welcome to ANmobiles - Where Innovation Meets Excellence</h2>
+            <p>At ANmobiles, strategically nestled in the heart of Multan, Pakistan, we transcend the conventional retail model. We are pioneers, curators of an unparalleled collection of mobile technology that redefines performance, aesthetics, and user interaction. Each device in our meticulously selected inventory is a testament to cutting-edge engineering, designed to seamlessly integrate into your dynamic lifestyle and elevate your digital experience. Our unwavering commitment to exceptional quality, competitive pricing, and a customer-centric ethos ensures your journey with us is nothing short of extraordinary. Step into the future; your mobile revolution begins here.</p>
+        </section>
+
+        <section id="products">
+            <h2>Our Exquisite Mobile Collection - Setting New Standards of Quality</h2>
+            <p>Dive into a meticulously curated selection of smartphones that are not just devices, but intelligent companions engineered for the future. Every model is handpicked for its groundbreaking features, robust construction, and an unparalleled user experience. At ANmobiles, "high quality" is more than a promise; it's the fundamental principle embedded in every circuit, every pixel, and every perfectly sculpted curve of our offerings.</p>
+            <div id="product-list" class="product-grid">
+                <!-- Products will be dynamically added here by JavaScript -->
+            </div>
+        </section>
+
+        <section id="brands">
+            <h2>Pioneering Brands We Proudly Showcase</h2>
+            <p>ANmobiles stands as a trusted gateway to the world's most innovative and respected mobile technology brands. Our strategic alliances ensure you receive 100% authentic, factory-sealed products, backed by global standards of excellence and our unwavering local commitment to your satisfaction. Explore the power of choice with industry titans.</p>
+            <div id="brand-logos-placeholder" class="brand-logo-grid">
+                <!-- Brand logos will be dynamically added here by JavaScript -->
+            </div>
+        </section>
+
+        <section id="customerservice">
+            <h2>Dedicated Customer Success Protocols - Your Digital Concierge</h2>
+            <p>At ANmobiles, customer care is an elevated experience, transcending mere support; it's a comprehensive, proactive partnership designed for your absolute peace of mind. Our highly skilled specialists are perpetually on standby, leveraging cutting-edge systems to provide swift, impeccably precise, and empathetically tailored assistance for all your mobile needs.</p>
+            <h3>Our Unrivaled Support Spectrum:</h3>
+            <ul>
+                <li><strong>Expert Product Concierge:</strong> Receive bespoke guidance and profound insights into device capabilities, ensuring a perfect synergy between technology and your lifestyle.</li>
+                <li><strong>Real-time Predictive Order Intelligence:</strong> Track your valuable purchase with unprecedented accuracy, receiving proactive, intelligent updates from our dispatch center directly to your chosen destination.</li>
+                <li><strong>Proactive Technical Diagnostics & Optimization:</strong> Our certified technicians offer comprehensive, remote assistance for seamless device setup, advanced troubleshooting, and performance fine-tuning, ensuring optimal functionality.</li>
+                <li><strong>Effortless Resolution: Returns & Exchanges Protocol:</strong> Navigate our transparent, customer-centric policies with utmost ease, ensuring complete satisfaction through every transactional aspect.</li>
+                <li><strong>Dedicated Warranty & Service Facilitation:</strong> We act as your primary liaison, meticulously streamlining all manufacturer warranty claims and expertly coordinating efficient, after-sales service and repairs.</li>
+                <li><strong>Personalized Communication Channels:</strong> Engage with our team through your preferred method – secure chat, direct call, or encrypted email – for a truly personalized experience.</li>
+            </ul>
+            <p>Experience support that not only anticipates your needs but consistently exceeds your highest expectations. Your uninterrupted success with your device is our paramount commitment.</p>
+        </section>
+
+        <section id="payment">
+            <h2>Secure Payment & Flexible Financing Nexus</h2>
+            <p>ANmobiles offers a spectrum of secure and convenient payment solutions designed to simplify your purchase experience. We prioritize transparency and flexibility, ensuring every transaction is smooth, safe, and tailored to your preference.</p>
+            <h3>Our Payment Gateways:</h3>
+            <ul>
+                <li><strong>Advance Payment Assurance:</strong> For our premium and high-demand devices, a nominal advance payment may be required to confirm your order and expedite processing. This secure transaction ensures stock reservation and guarantees your priority delivery. Remaining balance can be paid upon delivery.</li>
+                <li><strong>Diverse Mobile Payment Integration:</strong> Enjoy the ease and speed of transactions via popular mobile payment platforms. We accept payments through:
+                    <ul>
+                        <li><i class="fas fa-money-bill-wave"></i> **EasyPaisa:** Seamless mobile wallet transactions directly from your EasyPaisa account.</li>
+                        <li><i class="fas fa-wallet"></i> **JazzCash:** Quick and secure payments using your JazzCash mobile wallet: **+923221072469**.</li>
+                        <li><i class="fas fa-university"></i> **Bank Transfer (Online/ATM):** Direct transfers to our designated bank accounts for secure and reliable payment processing.</li>
+                        <li><i class="fas fa-credit-card"></i> **Credit/Debit Cards (Coming Soon):** Future integration for major credit and debit card networks for added convenience.</li>
+                        <li><i class="fas fa-coins"></i> *Additional local payment solutions may be available upon inquiry.*</li>
+                    </ul>
+                </li>
+                <li><strong>Transparent Shipping Charges (PKR):</strong> All shipping fees are calculated based on your location and order value, clearly displayed at checkout before final confirmation. For example, standard nationwide shipping typically ranges from **PKR 500 - PKR 1500**, varying by destination and package dimensions. Expedited options will show respective charges. For precise costs, please contact our logistics specialists.</li>
+                <li><strong>Encryption & Data Security:</strong> All financial transactions are processed through encrypted channels, safeguarding your personal and payment information with the highest industry standards. Your data privacy is paramount.</li>
+            </ul>
+            <p>For any specific queries regarding payment methods or financing options, our support team is ready to assist you around the clock.</p>
+        </section>
+
+        <section id="shipping">
+            <h2>Precision Logistics: Rapid & Secure Global Delivery Network</h2>
+            <p>Your valuable technology merits the fastest, most impregnable route to your possession. ANmobiles deploys a sophisticated, multi-tiered logistics network engineered for unparalleled efficiency and absolute security, flawlessly spanning across Pakistan and strategically extending its reach globally.</p>
+            <h3>Our Secure Delivery Ecosystem:</h3>
+            <ul>
+                <li><strong>Expedited Nationwide Coverage:</strong> Benefit from lightning-fast dispatch and precision delivery services reaching every corner of Pakistan, complemented by specialized express services exclusively for Multan and surrounding regions.</li>
+                <li><strong>Strategic Global Carrier Alliances:</strong> We forge exclusive partnerships with industry-leading courier services, renowned globally for their unwavering reliability, meticulously secure handling protocols, and cutting-edge advanced tracking capabilities.</li>
+                <li><strong>End-to-End Encrypted Tracking Telemetry:</strong> Monitor your shipment's entire journey with real-time, granular updates accessible via our secure client portal, providing you with complete transparency and absolute control over your valuable cargo.</li>
+                <li><strong>Multi-Layered Protective Encapsulation:</strong> Each device undergoes a rigorous, multi-stage packaging protocol, utilizing high-grade, aerospace-derived shock-absorbent materials and robust, tamper-evident seals to guarantee pristine and undamaged arrival.</li>
+                <li><strong>Adaptive Delivery Scheduling & Geo-Fencing:</strong> Customize your delivery experience with flexible options, allowing you to specify precise preferred times and geo-fenced locations for ultimate personal and professional convenience.</li>
+            </ul>
+            <p>Place your implicit trust in ANmobiles to deliver your future, with unparalleled safety, efficiency, and advanced foresight.</p>
+        </section>
+
+        <section id="about">
+            <h2>About ANmobiles - The Visionary Architect, Muhammad Anas</h2>
+            <p>Founded and meticulously sculpted by the visionary MUHAMMAD ANAS, ANmobiles transcends the antiquated conventional retail model; it is an avant-garde pioneering force in the mobile technology landscape. From our dynamic, innovation-driven operational hub in Multan, Pakistan, we aspire to establish ourselves as the undisputed epicenter of mobile innovation and digital lifestyle solutions. Our core philosophy is intrinsically built upon an unwavering commitment to offering an exclusive, highly curated repertoire of authentic, cutting-edge products, meticulously paired with fiercely competitive pricing structures and an unparalleled, deeply ingrained customer-centric ethos. We are profoundly dedicated to forging enduring, symbiotic relationships through expert insight, fostering vibrant, interactive community engagement, and ensuring that every single customer interaction exemplifies nothing short of transcendent excellence. ANmobiles is not merely a destination; it is where your most ambitious technological aspirations are not just met, but profoundly realized.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Direct Communications Nexus - Connect With Us</h2>
+            <p>Initiate secure contact with our advanced support network for any inquiries, technical assistance, bespoke consultations, or to simply explore the forefront of mobile innovation. This is your direct, high-bandwidth channel to a profoundly responsive and extensively knowledgeable team.</p>
+            <p><strong>Secure Comms Channel (Phone):</strong> <a href="tel:+923221072469">+923221072469</a></p>
+            <p><strong>Encrypted Data Stream (Email):</strong> <a href="mailto:info@anmobiles.com">info@anmobiles.com</a></p>
+            <p><strong>Digital Gateway (Website):</strong> <a href="http://www.ANmobiles.com" target="_blank">www.ANmobiles.com</a></p>
+            <p><strong>Operational Hub (Location):</strong> Multan, Pakistan</p>
+            <p><strong>Lead Architect (Proprietor):</strong> MUHAMMAD ANAS</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 ANmobiles. All Rights Reserved. | Exquisitely Engineered and Developed by <a href="#about">Muhammad Anas</a></p>
+    </footer>
+
+    <script>
+        // --- IMPORTANT FOR YOUR OWN IMAGES & GITHUB ---
+        // 1. Create an 'images' folder in the same directory as your index.html.
+        // 2. Put your actual .jpg, .png, etc. image files (optimized for display) inside that 'images' folder.
+        // 3. REPLACE the 'https://...' URLs below with your relative paths, like:
+        //    image: "images/samsung_galaxy_s24.jpg",
+        //    src: "images/samsung_logo.png",
+        // ---------------------------------------------
+
+        // This new array maps brand names to their local logo paths
+        const phoneBrandLogos = {
+            "Samsung": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/70px-Samsung_Logo.svg.png", // Reduced size
+            "Apple": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/50px-Apple_logo_black.svg.png", // Reduced size
+            "Xiaomi": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Xiaomi_logo.svg/70px-Xiaomi_logo.svg.png", // Reduced size
+            "OnePlus": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/OnePlus_logo.png/70px-OnePlus_logo.png", // Reduced size
+            "Google": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/70px-Google_2015_logo.svg.png", // Reduced size
+            "Huawei": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Huawei_Standard_logo.svg/70px-Huawei_Standard_logo.svg.png", // Reduced size
+            "Oppo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Oppo_logo.svg/70px-Oppo_logo.svg.png", // Reduced size
+            "Vivo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Vivo_logo.svg/70px-Vivo_logo.svg.png", // Reduced size
+            "Realme": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Realme_logo.svg/70px-Realme_logo.png", // Reduced size
+            "Infinix": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Infinix_logo.svg/70px-Infinix_logo.svg.png", // Reduced size
+            "Nokia": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Nokia_Logo.svg/70px-Nokia_Logo.svg.png", // Reduced size
+            "Motorola": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Motorola_logo.svg/70px-Motorola_logo.svg.png", // Reduced size
+            "Sony": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sony_logo.svg/70px-Sony_logo.svg.png", // Reduced size
+            "Asus": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Asus_logo.svg/70px-Asus_logo.svg.png" // Reduced size
+            // Add other brands as needed
+        };
+
+        const products = [
+            {
+                name: "Samsung Galaxy S24 Ultra",
+                brand: "Samsung",
+                image: "images/samsung_s24_ultra.jpg",
+                price: "PKR 380,000",
+                description: "Experience the pinnacle of mobile technology with the Samsung Galaxy S24 Ultra. Featuring an advanced AI-powered camera, the most formidable processor to date, and a breathtaking Dynamic AMOLED 2X display, this device is engineered for professionals and creators who demand absolute perfection and productivity with its integrated S Pen.",
+                features: [
+                    "6.8-inch Dynamic AMOLED 2X Display (1-120Hz Adaptive Refresh Rate, 2600 nits Peak Brightness)",
+                    "Revolutionary 200MP Wide-Angle Camera with AI Zoom, 12MP Ultra-Wide, and Dual Telephoto Lenses (50MP 5x Optical, 10MP 3x Optical)",
+                    "Qualcomm Snapdragon 8 Gen 3 for Galaxy (4nm) - Unmatched Processing Power",
+                    "5000mAh Intelligent Battery with 45W Super Fast Charging and 15W Wireless Charging",
+                    "IP68 Dust & Water Resistance, Corning Gorilla Armor Display Protection",
+                    "Integrated S Pen Stylus for Precision & Creativity, Titanium Frame"
+                ]
+            },
+            {
+                name: "iPhone 15 Pro Max",
+                brand: "Apple",
+                image: "https://images.unsplash.com/photo-1695843440788-b27b328a8d11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxpUGhvbmUlMjAxNSUyMHBybyUyMG1heHxlbnwwfHx8fDE3MDY2ODkyNDB8MA&ixlib=rb-4.0.3&q=80&w=150", // Requests smaller image
+                price: "PKR 420,000",
+                description: "Unleash professional-grade performance and groundbreaking photography with the iPhone 15 Pro Max. Forged from aerospace-grade titanium, it’s not just lighter and stronger, but immensely more capable, driven by the revolutionary A17 Pro chip and a state-of-the-art camera system.",
+                features: [
+                    "6.7-inch Super Retina XDR display with ProMotion (1-120Hz Adaptive Refresh Rate, 2000 nits Peak Brightness)",
+                    "Pro Camera System: 48MP Main (second-gen sensor-shift OIS), 12MP Ultra Wide, 12MP Telephoto (5x Optical Zoom) with LiDAR Scanner",
+                    "A17 Pro Chip with 6-core GPU - The fastest chip ever in a smartphone",
+                    "USB-C Connector with USB 3 speeds (up to 10Gbps)",
+                    "Customizable Action Button for instant access to your favorite features",
+                    "Dynamic Island for intuitive alerts and Live Activities, Ceramic Shield Front Cover"
+                ]
+            },
+            {
+                name: "Xiaomi 14 Ultra",
+                brand: "Xiaomi",
+                image: "images/google_pixel_8pro.png," // Requests smaller image
+                price: "PKR 250,000",
+                description: "Experience mobile photography at its absolute zenith with the Xiaomi 14 Ultra. Co-engineered with Leica, this device features an unparalleled camera system, a brilliantly vivid display, and formidable performance, all meticulously crafted into a premium, ergonomic design that exudes sophistication.",
+                features: [
+                    "6.73-inch WQHD+ AMOLED LTPO Display (1-120Hz Adaptive Refresh Rate, 3000 nits Peak Brightness)",
+                    "Leica Quad Camera System: 50MP Main (1-inch LYT-900 sensor), 50MP Ultra-Wide, Dual 50MP Leica Telephoto (3.2x & 5x Optical Zoom)",
+                    "Qualcomm Snapdragon 8 Gen 3 Processor - Flagship Performance",
+                    "90W Wired HyperCharge & 80W Wireless HyperCharge for ultra-fast power-ups",
+                    "IP68 Dust and Water Resistance for ultimate durability",
+                    "Xiaomi Surge T1 chip for advanced power management and efficiency, Aluminum Frame"
+                ]
+            },
+            {
+                name: "OnePlus 12",
+                brand: "OnePlus",
+                image: "https://images.pexels.com/photos/17697331/pexels-photo-17697331/free-photo-of-oneplus-11-phone-on-stand.jpeg?auto=compress&cs=tinysrgb&w=150&h=150", // Requests smaller image
+                price: "PKR 195,000",
+                description: "The OnePlus 12 delivers a seamless, incredibly powerful, and highly personalized user experience, featuring an award-winning display, ultra-rapid charging, and a professional-grade camera system meticulously tuned by Hasselblad. It's a true flagship redefined for performance enthusiasts.",
+                features: [
+                    "6.82-inch Fluid AMOLED ProXDR Display (1-120Hz Adaptive Refresh Rate, 4500 nits Peak Brightness)",
+                    "Hasselblad Camera for Mobile: 50MP Main + 48MP Ultra-Wide + 64MP Periscope Telephoto (3x Optical Zoom)",
+                    "Qualcomm Snapdragon 8 Gen 3 Processor - Gaming & Multitasking Powerhouse",
+                    "5400mAh Battery with 100W SUPERVOOC Charging (Wired) & 50W AIRVOOC (Wireless)",
+                    "Signature Alert Slider for instant mode changes, Wi-Fi 7 Connectivity",
+                    "Optimized OxygenOS experience for fluidity and customization, Aluminum Frame"
+                ]
+            },
+            {
+                name: "Google Pixel 8 Pro",
+                brand: "Google",
+                image: "https://images.unsplash.com/photo-1697227448834-080c95ceb52c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHxwaXxlbCUyMDh8ZW58MHx8fHwxNzA2ODk5MjE2fDA&ixlib=rb-4.0.3&q=80&w=150", // Requests smaller image
+                price: "PKR 280,000",
+                description: "Unleash the full potential of AI with the Google Pixel 8 Pro. Featuring Google's most powerful custom-designed chip, an incredibly smart camera system, and an all-day adaptive battery, it's designed to bring you the best of Google, intuitively.",
+                features: [
+                    "6.7-inch Super Actua Display (1-120Hz Adaptive Refresh Rate, 2400 nits Peak Brightness)",
+                    "Pro-Level Camera System: 50MP Main + 48MP Ultra-Wide + 48MP Telephoto (5x Optical Zoom) with Tensor G3 chip AI features",
+                    "Google Tensor G3 chip - Advanced AI for everyday tasks",
+                    "5050mAh All-day Adaptive Battery, IP68 Water and Dust Resistance",
+                    "Exclusive AI Features: Audio Magic Eraser, Video Boost, Best Take, Thermometer Sensor",
+                    "7 years of OS, security, and Feature Drop updates, Aluminum Frame"
+                ]
+            }
+        ];
+
+        const productList = document.getElementById("product-list");
+        products.forEach(product => {
+            const productCard = document.createElement("div");
+            productCard.className = "product-card glass-panel";
+
+            // Add brand logo dynamically
+            const brandLogoImg = document.createElement("img");
+            brandLogoImg.className = "product-brand-logo";
+            brandLogoImg.src = phoneBrandLogos[product.brand] || "https://via.placeholder.com/70x50/333/FFF?text=Logo"; // Fallback placeholder if logo not found
+            brandLogoImg.alt = `${product.brand} Logo`;
+            productCard.appendChild(brandLogoImg);
+
+            const imgElement = document.createElement("img");
+            imgElement.src = product.image;
+            imgElement.alt = product.name;
+            productCard.appendChild(imgElement);
+
+            const h4 = document.createElement("h4");
+            h4.textContent = product.name;
+            productCard.appendChild(h4);
+
+            const priceP = document.createElement("p");
+            priceP.className = "price";
+            priceP.textContent = `Price: ${product.price}`;
+            productCard.appendChild(priceP);
+
+            const descP = document.createElement("p");
+            descP.textContent = product.description;
+            productCard.appendChild(descP);
+
+            const featuresList = document.createElement("ul");
+            product.features.forEach(feature => {
+                const li = document.createElement("li");
+                li.textContent = feature;
+                featuresList.appendChild(li);
+            });
+            productCard.appendChild(featuresList);
+
+            const ctaButton = document.createElement("a");
+            ctaButton.href = "#contact"; // Links to contact section or a specific product detail page
+            ctaButton.className = "cta-button";
+            ctaButton.textContent = "Inquire Now";
+            productCard.appendChild(ctaButton);
+
+            productList.appendChild(productCard);
+        });
+
+        const brandLogos = [
+            { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/100px-Samsung_Logo.svg.png", alt: "Samsung Logo", name: "Samsung" }, // requests smaller image
+            { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/70px-Apple_logo_black.svg.png", alt: "Apple Logo", name: "Apple" }, // requests smaller image
+            { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Xiaomi_logo.svg/100px-Xiaomi_logo.svg.png", alt: "Xiaomi Logo", name: "Xiaomi" }, // requests smaller image
+            { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/OnePlus_logo.png/100px-OnePlus_logo.png", alt: "OnePlus Logo", name: "OnePlus" }, // requests smaller image
+            { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/100px-Google_2015_logo.svg.png", alt: "Google Logo", name: "Google" }, // requests smaller image
+            { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Huawei_Standard_logo.svg/100px-Huawei_Standard_logo.svg.png", alt: "Huawei Logo", name: "Huawei" }, // requests smaller image
+            { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Oppo_logo.svg/100px-Oppo_logo.svg.png", alt: "Oppo Logo", name: "Oppo" }, // requests smaller image
+            { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Vivo_logo.svg/100px-Vivo_logo.svg.png", alt: "Vivo Logo", name: "Vivo" }, // requests smaller image
+            { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Realme_logo.svg/100px-Realme_logo.png", alt: "Realme Logo", name: "Realme" }, // requests smaller image
+            { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Infinix_logo.svg/100px-Infinix_logo.svg.png", alt: "Infinix Logo", name: "Infinix" }, // requests smaller image
+            { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Nokia_Logo.svg/100px-Nokia_Logo.svg.png", alt: "Nokia Logo", name: "Nokia" }, // requests smaller image
+            { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Motorola_logo.svg/100px-Motorola_logo.svg.png", alt: "Motorola Logo", name: "Motorola" }, // requests smaller image
+            { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sony_logo.svg/100px-Sony_logo.svg.png", alt: "Sony Logo", name: "Sony" }, // requests smaller image
+            { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Asus_logo.svg/100px-Asus_logo.svg.png", alt: "Asus Logo", name: "Asus" } // requests smaller image
+        ];
+
+        const brandLogosPlaceholder = document.getElementById("brand-logos-placeholder");
+        brandLogos.forEach(logoInfo => {
+            const brandCard = document.createElement("div");
+            brandCard.className = "brand-logo-card glass-panel";
+
+            const imgElement = document.createElement("img");
+            imgElement.src = logoInfo.src;
+            imgElement.alt = logoInfo.alt;
+            brandCard.appendChild(imgElement);
+
+            const pElement = document.createElement("p");
+            pElement.textContent = logoInfo.name;
+            brandCard.appendChild(pElement);
+
+            brandLogosPlaceholder.appendChild(brandCard);
+        });
+    </script>
+</body>
+</html>
